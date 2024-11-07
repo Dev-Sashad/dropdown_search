@@ -18,7 +18,7 @@ class CustomSingleScrollView extends StatelessWidget {
       padding: scrollProps.padding,
       clipBehavior: scrollProps.clipBehavior,
       dragStartBehavior: scrollProps.dragStartBehavior,
-      hitTestBehavior: scrollProps.hitTestBehavior,
+      // hitTestBehavior: scrollProps.hitTestBehavior,
       keyboardDismissBehavior: scrollProps.keyboardDismissBehavior,
       physics: scrollProps.physics,
       scrollDirection: scrollProps.scrollDirection,
