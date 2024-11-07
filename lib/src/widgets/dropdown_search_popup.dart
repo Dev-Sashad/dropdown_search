@@ -188,8 +188,8 @@ class DropdownSearchPopupState<T> extends State<DropdownSearchPopup<T>> {
                               behavior: ScrollConfiguration.of(context)
                                   .copyWith(scrollbars: false),
                               child: ListView.builder(
-                                hitTestBehavior: widget
-                                    .popupProps.listViewProps.hitTestBehavior,
+                                // hitTestBehavior: widget
+                                //     .popupProps.listViewProps.hitTestBehavior,
                                 controller: widget
                                         .popupProps.listViewProps.controller ??
                                     scrollController,
@@ -505,7 +505,8 @@ class DropdownSearchPopupState<T> extends State<DropdownSearchPopup<T>> {
     }
   }
 
-  bool _isDisabled(T item) => widget.popupProps.disabledItemFn?.call(item) == true;
+  bool _isDisabled(T item) =>
+      widget.popupProps.disabledItemFn?.call(item) == true;
 
   /// selected item will be highlighted only when [widget.showSelectedItems] is true,
   /// if our object is String [widget.compareFn] is not required , other wises it's required
